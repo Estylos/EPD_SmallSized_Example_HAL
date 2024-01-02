@@ -1,0 +1,3 @@
+[submodule "Drivers/EPD_SmallSized_Driver_HAL"]
+	path = Drivers/EPD_SmallSized_Driver_HAL
+	url = https://github.com/Estylos/EPD_SmallSized_Driver_HAL
