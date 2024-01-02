@@ -3,8 +3,8 @@
  * @file        main.c
  * @brief       EPD driver test program
  * @author      Esteban CADIC
- * 				STMicroelectronics
- * 				Pervasive Displays Inc
+ *              STMicroelectronics
+ *              Pervasive Displays Inc
  * @version     1.0
  * @date        2024
  * @copyright   MIT License
@@ -98,6 +98,7 @@ int main(void)
 	ePaperDisplay_t epd;
 	epd.spi = &hspi1;
 
+	// CubeMX pin and port constants
 	epd.panelBusy.pin = EPD_BUSY_Pin;
 	epd.panelBusy.port = EPD_BUSY_GPIO_Port;
 
@@ -110,6 +111,7 @@ int main(void)
 	epd.panelReset.pin = EPD_RST_Pin;
 	epd.panelReset.port = EPD_RST_GPIO_Port;
 
+	// Select the constants for your EPD (from epd_screens.h)
 	epd.epdType = EPD_DISPLAY_266;
 	epd.displaySizeH = EPD_DISPLAY_266_SIZE_H;
 	epd.displaySizeV = EPD_DISPLAY_266_SIZE_V;
